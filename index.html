@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Nuuvem - Sua loja digital de jogos</title>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="header-menu">
+            <div class="header-logo header-boxes">
+                <i class="bx bx-cloud"></i>
+                <p>nuuvem</p>
+            </div>
+            <div class="header-menu-options header-boxes">
+                <ul class="menu-list-box">
+                    <li id="promotions" class="menu-list">
+                        <i class="bx bx-purchase-tag"></i>
+                        <p>Promoções</p>
+                        <i class="bx bx-chevron-down"></i>
+                        <ul class="promotions-submenu menu-to-submenu">
+                            <li class="submenu-options">
+                                <i class="bx bx-coffee"></i>
+                                <p>Todas as promoções</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-money-withdraw"></i>
+                                <p>Abaixo de R$20,00</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-coin"></i>
+                                <p>Grátis com seus Drops</p>
+                            </li>
+                            <li class="submenu-options" id="line-breaker"></li>
+                            <li class="submenu-options">
+                                <i class="bx bx-stopwatch"></i>
+                                <p>Próximas campanhas Nuuvem</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="pc" class="menu-list">
+                        <i class="bx bx-desktop"></i>
+                        <p>PC</p>
+                        <i class="bx bx-chevron-down"></i>
+                        <ul class="pc-submenu menu-to-submenu">
+                            <li class="submenu-options">
+                                <i class="bx bx-joystick-button"></i>
+                                <p>Todos os jogos</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-purchase-tag-alt"></i>
+                                <p>Promoções</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-error-alt"></i>
+                                <p>Lançamentos</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-calendar-event"></i>
+                                <p>Pré-Vendas</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-badge"></i>
+                                <p>Mais Populares</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-gift"></i>
+                                <p>Free to Play</p>
+                            </li>
+                            <li class="submenu-options" id="line-breaker"></li>
+                            <li class="submenu-options">
+                                <i class="bx bx-money-withdraw"></i>
+                                <p>Abaixo de R$20,00</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-coin"></i>
+                                <p>Grátis com seus Drops</p>
+                            </li>
+                            <li class="submenu-options" id="line-breaker"></li>
+                            <li class="submenu-options">
+                                <i class="bx bx-joystick"></i>
+                                <p>Steam</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-party"></i>
+                                <p>Epic Games</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-cube-alt"></i>
+                                <p>Roblox</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-home-alt"></i>
+                                <p>UPlay</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-rocket"></i>
+                                <p>Rockstar Social Club</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-cross"></i>
+                                <p>DRM Free</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="consoles" class="menu-list">
+                        <i class="bx bx-joystick"></i>
+                        <p>Consoles</p>
+                        <i class="bx bx-chevron-down"></i>
+                        <ul class="consoles-submenu menu-to-submenu">
+                            <li class="submenu-options">
+                                <i class="bx bx-joystick-alt"></i>
+                                <p>Playstation</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-x-circle"></i>
+                                <p>Xbox</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-game"></i>
+                                <p>Nintendo</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="mobile" class="menu-list">
+                        <i class="bx bx-mobile-alt"></i>
+                        <p>Mobile</p>
+                    </li>
+                    <li id="menu-dots" class="menu-list">
+                        <i class="bx bx-dots-horizontal"></i>
+                        <ul class="dots-submenu menu-to-submenu">
+                            <li class="submenu-options">
+                                <i class="bx bx-support"></i>
+                                <p>Suporte</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-blogger"></i>
+                                <p>Blog</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-info-circle"></i>
+                                <p>Sobre</p>
+                            </li>
+                            <li class="submenu-options">
+                                <i class="bx bx-invader"></i>
+                                <p>N-Arcade - Clique e jogue</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="search-box" class="menu-list">
+                        <div class="search-magnifier-container">
+                            <input type="text" placeholder="Buscar">
+                            <i class="bx bx-search"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-login-cart header-boxes">
+                <div id="login">
+                    <i class="bx bx-user"></i>
+                    <p>Entrar</p>
+                </div>
+                <div id="cart">
+                    <i class="bx bx-cart"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="top-salles">
+            <i class="bx bx-chevron-left chevron bx-tada-hover"></i>
+            <div class="three-box-games">
+                <div class="game-1 game-container">
+                    <div class="price-and-percentage-container">
+                        <p class="percentage">-75%</p>
+                        <p class="price">
+                            <i class="bx bx-cart-add"></i>
+                            R$ 49,90</p>
+                    </div>
+                </div>
+                <div class="twins-games">
+                    <div class="game-2 game-container">
+                        <div class="price-and-percentage-container">
+                            <p class="percentage">-50%</p>
+                            <p class="price">
+                                <i class="bx bx-cart-add"></i>
+                                R$ 10,90</p>
+                        </div>
+                    </div>
+                    <div class="game-3 game-container">
+                        <div class="price-and-percentage-container">
+                            <p class="percentage">-40%</p>
+                            <p class="price">
+                                <i class="bx bx-cart-add"></i>
+                                R$ 149,90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <i class="bx bx-chevron-right chevron bx-tada-hover"></i>
+            <div class="three-circles">
+                <i class="bx bx-circle three-dots-circle"></i>
+                <i class="bx bx-circle three-dots-circle"></i>
+                <i class="bx bx-circle three-dots-circle"></i>
+            </div>
+        </section>
+        <section class="normal-games-sales">
+            <div class="normal-games-container">
+                <div class="developer-enterprise-name-viewmore">
+                    <div class="developer-enterprise-name">
+                        <h1>BANDAI NAMCO</h1>
+                        <p>Jogos com até 90% de desconto!</p>
+                    </div>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="normal-five-games-container">
+                    <div class="normal-game-1 normal-games" style="background-image: url(./img/scarlet-nexus.png)">
+                        <div>
+                            <p>SCARLET NEXUS</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-40%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 149,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-2 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>DRAGON BALL Z: KAKKAROT</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-70%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 47,97</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-3 normal-games" style="background-image: url(./img/one-piece-world-seeker.png)">
+                        <div>
+                            <p>ONE PIECE WORLD SEEKER</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-85%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 37,48</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-4 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Naruto Shippuden: Ultimate Ninja Storm 4</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-77%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 22,31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-5 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>MY HERO ONE'S JUSTICE 2 Deluxe Edition</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-75%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 57,47</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="normal-games-sales">
+            <div class="normal-games-container">
+                <div class="developer-enterprise-name-viewmore">
+                    <div class="developer-enterprise-name">
+                        <h1>Kalypso Media</h1>
+                        <p>Jogos com até 75% de desconto!</p>
+                    </div>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="normal-five-games-container">
+                    <div class="normal-game-1 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-67%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 45,87</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-2 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Complete Colection</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 83,05</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-3 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - A Multitude of Maps</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 9,50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-4 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Famous Last Words</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-70%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 3,30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-5 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3: An Unexpected</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 5,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="horizontal-game-sale">
+            <div class="horizontal-game-container">
+                <div class="price-and-percentage-container">
+                    <p class="percentage">-50%</p>
+                    <p class="price">
+                        <i class="bx bx-cart-add"></i>
+                        R$ 5,50</p>
+                </div>
+            </div>
+        </section>
+        <section class="normal-games-sales">
+            <div class="normal-games-container">
+                <div class="developer-enterprise-name-viewmore">
+                    <div class="developer-enterprise-name">
+                        <h1>Kalypso Media</h1>
+                        <p>Jogos com até 75% de desconto!</p>
+                    </div>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="normal-five-games-container">
+                    <div class="normal-game-1 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-67%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 45,87</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-2 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Complete Colection</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 83,05</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-3 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - A Multitude of Maps</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 9,50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-4 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Famous Last Words</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-70%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 3,30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-5 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3: An Unexpected</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 5,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="normal-games-sales">
+            <div class="normal-games-container">
+                <div class="developer-enterprise-name-viewmore">
+                    <div class="developer-enterprise-name">
+                        <h1>Kalypso Media</h1>
+                        <p>Jogos com até 75% de desconto!</p>
+                    </div>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="normal-five-games-container">
+                    <div class="normal-game-1 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-67%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 45,87</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-2 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Complete Colection</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 83,05</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-3 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - A Multitude of Maps</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 9,50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-4 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Famous Last Words</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-70%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 3,30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-5 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3: An Unexpected</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 5,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="horizontal-game-sale">
+            <div class="horizontal-game-container">
+                <div class="price-and-percentage-container">
+                    <p class="percentage">-50%</p>
+                    <p class="price">
+                        <i class="bx bx-cart-add"></i>
+                        R$ 5,50</p>
+                </div>
+            </div>
+        </section>
+        <section class="normal-games-sales">
+            <div class="normal-games-container">
+                <div class="developer-enterprise-name-viewmore">
+                    <div class="developer-enterprise-name">
+                        <h1>Kalypso Media</h1>
+                        <p>Jogos com até 75% de desconto!</p>
+                    </div>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="normal-five-games-container">
+                    <div class="normal-game-1 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-67%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 45,87</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-2 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Complete Colection</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 83,05</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-3 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - A Multitude of Maps</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 9,50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-4 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Famous Last Words</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-70%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 3,30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-5 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3: An Unexpected</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 5,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="normal-games-sales">
+            <div class="normal-games-container">
+                <div class="developer-enterprise-name-viewmore">
+                    <div class="developer-enterprise-name">
+                        <h1>Kalypso Media</h1>
+                        <p>Jogos com até 75% de desconto!</p>
+                    </div>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="normal-five-games-container">
+                    <div class="normal-game-1 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-67%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 45,87</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-2 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Complete Colection</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 83,05</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-3 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - A Multitude of Maps</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 9,50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-4 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3 - Famous Last Words</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-70%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 3,30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normal-game-5 normal-games" style="background-image: url(./img/dragon-ball-z-kakarot.png)">
+                        <div>
+                            <p>Dungeons 3: An Unexpected</p>
+                            <i class="bx bx-steam"></i>
+                            <i class="bx bxl-windows"></i>
+                            <div class="price-and-percentage-container">
+                                <p class="percentage">-50%</p>
+                                <p class="price">
+                                    <i class="bx bx-cart-add"></i>
+                                    R$ 5,50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="message-help">
+        <i class="bx bx-message-dots"></i>
+    </div>
+</body>
+</html>
